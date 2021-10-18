@@ -27,6 +27,7 @@ def main():
     #                     'mac_address': 'b8:ca:3a:5d:28:b8',
     #                     'ip': '192.168.1.132',
     #                     'port': '22'
+    #                     'pulsar_completion_topic': 'some optional completion topic name'
     #                   }
     message = {'name': get_config('COMPUTER_NAME'),
                'mac_address': get_config('MAC_ADDRESS'),
