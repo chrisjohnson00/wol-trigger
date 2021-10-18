@@ -1,5 +1,4 @@
 from configurator.utility import get_config
-import logging
 import pulsar
 from json import dumps
 import pygogo as gogo
@@ -38,6 +37,5 @@ def main():
     send_message(message)
 
     if __name__ == '__main__':
-        logging.basicConfig(level=logging.INFO)
-        logging.info("Starting")
+        logger.info("Starting")
         main()
