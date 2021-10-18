@@ -4,7 +4,7 @@ A small app which is used as part of a k8s cronjob to send a message destined fo
 ## Project dependencies
 
     pip install --upgrade pip
-    pip install --upgrade pulsar-client fastavro pygogo
+    pip install --upgrade pulsar-client fastavro pygogo python-consul
     pip freeze > requirements.txt
     sed -i '/pkg_resources/d' requirements.txt
 
