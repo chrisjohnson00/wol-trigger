@@ -33,10 +33,11 @@ def main():
                'mac_address': get_config('MAC_ADDRESS'),
                'ip': get_config('IP_ADDRESS'),
                'port': get_config('PORT_NUMBER')}
+    if get_config('PULSAR_COMPLETION_TOPIC'):
+        message['pulsar_completion_topic'] = get_config('PULSAR_COMPLETION_TOPIC')
     send_message(message)
 
-
-if __name__ == '__main__':
-    logging.basicConfig(level=logging.INFO)
-    logging.info("Starting")
-    main()
+    if __name__ == '__main__':
+        logging.basicConfig(level=logging.INFO)
+        logging.info("Starting")
+        main()

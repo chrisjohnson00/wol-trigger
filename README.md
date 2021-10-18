@@ -17,3 +17,5 @@ A small app which is used as part of a k8s cronjob to send a message destined fo
  - `PORT_NUMBER` The port number to use for verification of readyness after wakeup
  - `PULSAR_SERVER` The hostname/ip for Pulsar
  - `PULSAR_TOPIC` The topic to send the wakeup message to
+ - `PULSAR_COMPLETION_TOPIC` If set, the message will include a KV for a completion topic.  Used to tell the WOL service 
+to send a completion message when the machine is "woke"
