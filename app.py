@@ -36,6 +36,7 @@ def main():
         message['pulsar_completion_topic'] = get_config('PULSAR_COMPLETION_TOPIC')
     send_message(message)
 
-    if __name__ == '__main__':
-        logger.info("Starting")
-        main()
+
+if __name__ == '__main__':
+    logger.info("Starting")
+    main()
